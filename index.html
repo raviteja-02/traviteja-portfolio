@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Raviteja Thipparthi | Full-Stack Developer & Cloud Engineer</title>
+    <meta name="description" content="Personal portfolio of Raviteja Thipparthi — Full-Stack Web Developer and AWS Certified Cloud Engineer based in Hyderabad, India." />
+    <meta name="author" content="Raviteja Thipparthi" />
+    <meta name="keywords" content="Raviteja Thipparthi, Full-Stack Developer, Cloud Engineer, AWS, React, Django, Portfolio" />
+
+    <meta property="og:title" content="Raviteja Thipparthi | Full-Stack Developer & Cloud Engineer" />
+    <meta property="og:description" content="Personal portfolio of Raviteja Thipparthi — Full-Stack Web Developer and AWS Certified Cloud Engineer." />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@raviteja_dev" />
+
+  <script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+
+    // Block devtools keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      // F12
+      if (e.key === 'F12') { e.preventDefault(); return false; }
+      // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+      if (e.ctrlKey && e.shiftKey && ['I','i','J','j','C','c'].includes(e.key)) { e.preventDefault(); return false; }
+      // Ctrl+U (view source)
+      if (e.ctrlKey && ['U','u'].includes(e.key)) { e.preventDefault(); return false; }
+      // Ctrl+S (save page)
+      if (e.ctrlKey && ['S','s'].includes(e.key)) { e.preventDefault(); return false; }
+    });
+
+    // Detect devtools open via window outer/inner size difference
+    (function() {
+      var threshold = 160;
+      function detectDevTools() {
+        if (
+          window.outerWidth - window.innerWidth > threshold ||
+          window.outerHeight - window.innerHeight > threshold
+        ) {
+          document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#0d1117;font-family:JetBrains Mono,monospace;color:#3fb950;font-size:18px;">Access Denied.</div>';
+        }
+      }
+      window.addEventListener('resize', detectDevTools);
+    })();
+  </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
